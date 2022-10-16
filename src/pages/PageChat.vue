@@ -17,7 +17,7 @@
     <q-footer elevated>
       <q-toolbar class="q-pa-sm">
         <q-form 
-          class="full-width" 
+          class="full-width"
         >
           <q-input
               v-model="newMessage"
@@ -47,7 +47,7 @@
 <script>
 import { defineComponent } from 'vue'
 
-export default defineComponent({
+export default{
   name: 'PageChat',
   data() {
     return {
@@ -74,12 +74,12 @@ export default defineComponent({
   },
   methods: {
     sendMessage() {
-      console.log('enviando');
       this.messages.push({
         text: this.newMessage,
         from: 'me'
-      })
+      });
+      this.newMessage = '';
     }
   }
-})
+}
 </script>

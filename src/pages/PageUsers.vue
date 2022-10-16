@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex q-pa-md">
     <q-list class="full-width">
-      <q-item v-for="user in Users" :key="user.id" class="q-my-sm" clickable v-ripple>
+      <q-item v-for="user in Users" :key="user.id" class="q-my-sm" clickable v-ripple to="/chat">
         <q-item-section avatar>
           <q-avatar color="primary" text-color="white">
             {{ user.name.charAt(0) }}
