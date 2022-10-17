@@ -1,0 +1,1 @@
+export const NAME_FOR_CONST = "CHAT/NAME_FOR_CONST";
